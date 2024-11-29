@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./assets/logo.svg" />
     <title>u02 - SixtenE</title>
+    <script src="./shared-js/hamburger.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -35,8 +36,8 @@
             </svg>
           </button>
         </div>
-        <input type="checkbox" id="toggle-menu" class="toggle-menu" />
-        <div class="nav-container">
+        <!-- <input type="checkbox" id="toggle-menu" class="toggle-menu" /> -->
+        <div class="nav-container hidden">
           <nav class="header-nav">
             <ul class="nav-list">
               <li class="nav-item"><a href="/">Home</a></li>
@@ -47,7 +48,7 @@
             </ul>
           </nav>
         </div>
-        <div class="social-container">
+        <div class="social-container hidden">
           <ul class="social-list">
             <li>
               <a href="https://github.com" target="_blank" class="social-link">

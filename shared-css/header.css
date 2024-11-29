@@ -33,7 +33,7 @@
   stroke: var(--text-color);
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   width: 2rem;
   height: 2rem;
 
@@ -43,11 +43,11 @@ input[type="checkbox"] {
 
   opacity: 0;
 }
-
+/* 
 .toggle-menu:checked ~ .nav-container,
 .toggle-menu:checked ~ .social-container {
   display: none;
-}
+} */
 
 .nav-container {
   width: 100%;
@@ -114,6 +114,10 @@ input[type="checkbox"] {
   fill: var(--background-color);
 }
 
+.hidden {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .header {
     flex-direction: row;
@@ -141,5 +145,7 @@ input[type="checkbox"] {
     width: 30%;
 
     margin-top: 0;
+  }
+  .hidden {
   }
 }
