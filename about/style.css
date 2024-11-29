@@ -1,0 +1,120 @@
+.about-me-container {
+  width: 100%;
+}
+
+.about-me-container h1 {
+  margin-bottom: 0.5rem;
+
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.about-me-container p {
+  margin-bottom: 1rem;
+
+  font-size: 0.8rem;
+  color: var(--text-color);
+}
+
+.experience-container {
+  width: 100%;
+}
+.experience-container h1 {
+  margin-bottom: 0.5rem;
+
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.education-container {
+  width: 100%;
+
+  margin-top: 2rem;
+}
+
+.education-container h1 {
+  margin-bottom: 0.5rem;
+
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.experience-list {
+  width: 100%;
+
+  list-style-type: none;
+
+  color: var(--text-color);
+  font-size: 0.7rem;
+}
+
+.experience-list-item {
+  width: 100%;
+
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+.item-left {
+  width: 60%;
+
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.experience-title {
+  width: 100%;
+
+  margin-bottom: 0.5rem;
+
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--accent-color);
+}
+
+.experience-company {
+  width: 100%;
+}
+
+.experience-location {
+  width: 100%;
+}
+
+.item-right {
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.experience-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 0.8rem;
+
+  background-color: #d7ffe0;
+  border-radius: 9999px;
+  color: #018c0f;
+}
+
+@media (min-width: 1024px) {
+  .about-me-container p {
+    padding-right: 22rem;
+  }
+  .experience-company {
+    width: 40%;
+  }
+  .experience-location {
+    width: 20%;
+  }
+}
