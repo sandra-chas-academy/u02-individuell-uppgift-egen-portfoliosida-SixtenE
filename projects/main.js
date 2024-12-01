@@ -1,6 +1,6 @@
 const projectComponent = (project) => `
     <li class="project-item">
-        <img src="../assets/project1.jpeg" alt="project1 image" />
+        <img src="https://user-images.githubusercontent.com/33528647/108231428-c1837c80-710f-11eb-8c47-cd40a2ddd59a.png" alt="Placeholder github image" />
         <h2>${project.title}</h2>
         <p>${project.description ? project.description : 'No description provided'}</p>
         <p><span>Tech stack:</span> ${project.language ? project.language : 'Not specified'}</p>
