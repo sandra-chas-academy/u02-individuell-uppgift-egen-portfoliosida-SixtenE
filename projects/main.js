@@ -29,8 +29,9 @@ const githubAPI = 'https://api.github.com/users/SixtenE/repos'
 
 const projectList = document.querySelector('.project-list')
 
-const clearList = () => {
-  projectList.innerHTML = ''
+const removeLoaders = () => {
+  const loaders = document.querySelectorAll('.loader')
+  loaders.forEach((loader) => loader.remove())
 }
 
 const fetchProjects = async () => {
@@ -61,7 +62,7 @@ const fetchProjects = async () => {
 const displayProcess = async () => {
   const projects = await fetchProjects()
 
-  clearList()
+  removeLoaders()
   for (const project of projects) {
     projectList.innerHTML += projectComponent(project)
   }

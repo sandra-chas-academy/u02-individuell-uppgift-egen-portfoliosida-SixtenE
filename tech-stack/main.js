@@ -1,7 +1,8 @@
 const techStackList = document.querySelector('.tech-stack-list')
 
-const clearList = () => {
-  techStackList.innerHTML = ''
+const removeLoaders = () => {
+  const loaders = document.querySelectorAll('.loader')
+  loaders.forEach((loader) => loader.remove())
 }
 
 const fetchTechStack = async () => {
@@ -20,7 +21,7 @@ const fetchTechStack = async () => {
 const displayTechStack = async () => {
   const techStack = await fetchTechStack()
 
-  clearList()
+  removeLoaders()
   for (const n in techStack) {
     techStackList.innerHTML += `<li class="tech-stack-item">${techStack[n].svg}</li>`
   }

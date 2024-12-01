@@ -38,9 +38,9 @@ const educationComponent = (education) => `
 const experienceList = document.querySelector('.experience-container .experience-list')
 const educationList = document.querySelector('.education-container .experience-list')
 
-const clearLists = () => {
-  experienceList.innerHTML = ''
-  educationList.innerHTML = ''
+const removeLoaders = () => {
+  const loaders = document.querySelectorAll('.loader')
+  loaders.forEach((loader) => loader.remove())
 }
 
 const fetchResume = async () => {
@@ -59,7 +59,7 @@ const fetchResume = async () => {
 const displayResume = async () => {
   const { workExperience, education } = await fetchResume()
 
-  clearLists()
+  removeLoaders()
 
   workExperience.forEach((work) => {
     experienceList.innerHTML += workComponent(work)
