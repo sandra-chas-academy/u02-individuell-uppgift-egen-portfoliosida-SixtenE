@@ -1,0 +1,45 @@
+{
+  "workExperience": [
+    {
+      "title": "Software Developer",
+      "company": "Microsoft",
+      "location": "Redmond, WA",
+      "type": "Full time",
+      "date": "Sep 2023 - Nov 2023"
+    },
+    {
+      "title": "Shop Assistant",
+      "company": "Granngården",
+      "location": "Täby",
+      "type": "Part time",
+      "date": "Mar 2023 - Aug 2023"
+    },
+    {
+      "title": "Post Office Worker",
+      "company": "Postnord",
+      "location": "Täby",
+      "type": "Part time",
+      "date": "Nov 2019 - Aug 2021"
+    }
+  ],
+  "education": [
+    {
+      "title": "Fullstack JavaScript",
+      "company": "Chas Academy YH",
+      "type": "Full time",
+      "date": "Aug 2024 - "
+    },
+    {
+      "title": "Information and Media Technology",
+      "company": "Åva Gymnasium",
+      "type": "Full time",
+      "date": "Aug 2016 - Jun 2019"
+    },
+    {
+      "title": "Kindergarten",
+      "company": "Giggen Förskola",
+      "type": "Full time",
+      "date": "Aug 2003 - Jun 2005"
+    }
+  ]
+}
