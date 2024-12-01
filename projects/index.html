@@ -34,8 +34,8 @@
             </svg>
           </button>
         </div>
-        <input type="checkbox" id="toggle-menu" class="toggle-menu" />
-        <div class="nav-container">
+        <!-- <input type="checkbox" id="toggle-menu" class="toggle-menu" /> -->
+        <div class="nav-container hidden">
           <nav class="header-nav">
             <ul class="nav-list">
               <li class="nav-item"><a href="/">Home</a></li>
@@ -46,7 +46,7 @@
             </ul>
           </nav>
         </div>
-        <div class="social-container">
+        <div class="social-container hidden">
           <ul class="social-list">
             <li>
               <a href="https://github.com" target="_blank" class="social-link">
@@ -82,7 +82,8 @@
           <h1>Projects</h1>
           <p>Things I've built so far</p>
           <ul class="project-list">
-            <li class="project-item">
+            <span class="loader"></span>
+            <!-- <li class="project-item">
               <img src="../assets/project1.jpeg" alt="project1 image" />
               <h2>Project Title goes here</h2>
               <p>This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
@@ -225,7 +226,7 @@
                   >View Code</a
                 >
               </div>
-            </li>
+            </li> -->
           </ul>
         </section>
       </main>
@@ -237,5 +238,7 @@
         </p>
       </footer>
     </div>
+    <script src="./main.js" defer type="module"></script>
+    <script src="../shared-js/hamburger.js" defer type="module"></script>
   </body>
 </html>
