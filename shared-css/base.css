@@ -43,6 +43,29 @@ body {
   padding: 2rem;
 }
 
+.loader {
+  width: 3rem;
+  height: 3rem;
+
+  display: block;
+  margin: 0 auto;
+
+  border-radius: 9999px;
+  border: 0.4rem solid #f3f3f3;
+  border-left: 0.4rem solid transparent;
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 1024px) {
   .wrapper {
     max-width: 1024px;
