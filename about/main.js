@@ -44,8 +44,6 @@ const clearLists = () => {
 }
 
 const fetchResume = async () => {
-  //Simulera en långsam nätverksförfrågan
-  //await new Promise((resolve) => setTimeout(resolve, 2000))
   try {
     const response = await fetch('./cv.json')
     if (!response.ok) {

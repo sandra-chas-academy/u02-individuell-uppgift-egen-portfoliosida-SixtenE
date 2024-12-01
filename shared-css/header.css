@@ -43,11 +43,6 @@ input[type='checkbox'] {
 
   opacity: 0;
 }
-/* 
-.toggle-menu:checked ~ .nav-container,
-.toggle-menu:checked ~ .social-container {
-  display: none;
-} */
 
 .nav-container {
   width: 100%;

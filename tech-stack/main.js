@@ -1,21 +1,29 @@
 const techStackList = document.querySelector('.tech-stack-list')
 
-const fetchJson = async () => {
+const clearList = () => {
+  techStackList.innerHTML = ''
+}
+
+const fetchTechStack = async () => {
   try {
     const response = await fetch('./technologies.json')
     if (!response.ok) {
       throw new Error('Network response was not ok')
     }
     const data = await response.json()
-    console.log(data)
-    for (const n in data) {
-      techStackList.innerHTML += `
-      <li class="tech-stack-item">${data[n].svg}</li>
-      `
-    }
+    return data
   } catch (error) {
     console.error(error)
   }
 }
 
-fetchJson()
+const displayTechStack = async () => {
+  const techStack = await fetchTechStack()
+
+  clearList()
+  for (const n in techStack) {
+    techStackList.innerHTML += `<li class="tech-stack-item">${techStack[n].svg}</li>`
+  }
+}
+
+displayTechStack()
