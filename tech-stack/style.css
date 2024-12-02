@@ -1,0 +1,45 @@
+.tech-stack-container h1 {
+  margin-bottom: 0.5rem;
+
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.tech-stack-container p {
+  margin-bottom: 1rem;
+
+  font-size: 0.8rem;
+  color: var(--text-color);
+}
+
+.tech-stack-list {
+  width: 100%;
+
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tech-stack-item {
+  width: 25%;
+
+  padding: 1rem;
+}
+
+.tech-stack-item svg {
+  width: 100%;
+  height: auto;
+
+  fill: var(--primary-color);
+}
+
+@media (min-width: 1024px) {
+  .tech-stack-list {
+    margin-top: 3rem;
+  }
+  .tech-stack-item {
+    width: 16%;
+
+    padding: 2.5rem;
+  }
+}
