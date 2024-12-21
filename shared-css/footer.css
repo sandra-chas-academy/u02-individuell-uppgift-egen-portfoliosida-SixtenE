@@ -1,0 +1,22 @@
+.footer {
+  width: 100%;
+
+  text-align: center;
+}
+
+.footer-text {
+  background: linear-gradient(to left, #e70faa, #00c0fd);
+  background-clip: text;
+  font-size: 0.7rem;
+  color: var(--text-color);
+}
+
+.footer-text span {
+  color: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-text {
+    font-size: 1rem;
+  }
+}
